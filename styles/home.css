@@ -1,0 +1,75 @@
+
+.top {
+  float: left;
+  margin-top: 1em;
+  width: 95%;
+  margin-left: 2.5%;
+  background: #10696b;
+}
+
+.top>p {
+  width: 95%;
+  height: 10em;
+  margin-left: 2.5%;
+  font-size: 1.5em;
+  text-align: center;;
+  overflow: scroll;
+}
+
+.top ul {
+  width: 95%;
+  padding-top: 14%;
+  margin-left: 2.5%;
+  position: relative;
+  bottom: 0px;
+}
+
+.top ul li {
+  display: inline-block;
+  float: left;
+  width: 15%;
+  padding-top: 15%;
+  margin-left: 13%;
+  transform: rotate(45deg);
+  background: #089378;
+  outline: 2px solid white;
+  position: absolute;
+  bottom: -50%;
+}
+
+.top ul>:nth-child(2) {
+  margin-left: 73%;
+}
+
+.top ul>:nth-child(3) {
+  margin-left: 43%;
+}
+
+.top ul li p {
+  position: absolute;
+  width: 100%;
+  float: left;
+  text-align: center;
+  top: 40%;
+  transform: rotate(-45deg);
+  font-size: 2vmax;
+}
+
+.middle {
+  float: left;
+  width: 95%;
+  padding-top: 5%;
+  margin-left: 2.5%;
+  margin-top: 10vmax;
+  background: #10696b;
+}
+
+.middle>div {
+  float: left;
+  display: inline-block;
+  width: 35%;
+  margin-left: 10%;
+  padding-top: 35%;
+  margin-bottom: 5%;
+  background: #089378;
+}
