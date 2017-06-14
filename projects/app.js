@@ -6,7 +6,7 @@ function Projects(myProject) {
 }
 
 Projects.prototype.insertion = function() {
-  var $newProject = $('.template').clone();
+  var $newProject = $('.template').first().clone();
 
   $newProject.find('a').attr('href', this['url']);
   $newProject.find('img').attr('src', this['imgSrc']);
@@ -14,3 +14,9 @@ Projects.prototype.insertion = function() {
   $newProject.find('p').text(this['body']);
   return $newProject;
 };
+
+projectObjects.forEach(item => proj.push(new Projects(item)));
+
+proj.forEach(item => $('main').append(item.insertion()));
+
+$('.template').first().remove();

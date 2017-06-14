@@ -1,6 +1,6 @@
 'use strict'
 
-projectObjects = [
+var projectObjects = [
   {
     url : 'https://github.com/ejdelrio/portfolio',
     title: 'Portfolio',

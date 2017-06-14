@@ -1,0 +1,35 @@
+.template {
+  width: 95%;
+  margin-left: 2.5%;
+  height: 15em;
+  background: #10696b;
+  margin-top: 2em;
+}
+
+.template img {
+  position: relative;
+  float: left;
+  height: 10em;
+  width: 15em;
+  margin-left: 2em;
+  margin-top: 2em;
+
+}
+
+.template span {
+  height: 10em;
+  width: 50em;
+  float: left;
+  margin-top: 2em;
+  margin-left: 2em;
+}
+
+.template span h3 {
+  font-size: 2em;
+  color: white;
+}
+
+.template span p {
+  font-size: 1.2em;
+  color: white;
+}
