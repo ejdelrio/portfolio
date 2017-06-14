@@ -1,4 +1,5 @@
 
+
 li {
   list-style: none;
 }
@@ -124,24 +125,25 @@ main {
   float: left;
   margin-top: 1em;
   width: 95%;
-  height: 20em;
   margin-left: 2.5%;
   background: #10696b;
 }
 
 .top>p {
   width: 95%;
-  height: 75%;
+  height: 10em;
   margin-left: 2.5%;
   font-size: 1.5em;
   text-align: center;;
-  overflow-y: scroll;
+  overflow: scroll;
 }
 
 .top ul {
-  height: 5em;
   width: 95%;
-  position: absolute;
+  padding-top: 14%;
+  margin-left: 2.5%;
+  position: relative;
+  bottom: 0px;
 }
 
 .top ul li {
@@ -149,9 +151,20 @@ main {
   float: left;
   width: 15%;
   padding-top: 15%;
-  margin-left: 14%;
+  margin-left: 13%;
   transform: rotate(45deg);
   background: #089378;
+  outline: 2px solid white;
+  position: absolute;
+  bottom: -50%;
+}
+
+.top ul>:nth-child(2) {
+  margin-left: 73%;
+}
+
+.top ul>:nth-child(3) {
+  margin-left: 43%;
 }
 
 .top ul li p {
@@ -161,7 +174,7 @@ main {
   text-align: center;
   top: 40%;
   transform: rotate(-45deg);
-  font-size: 2.5vmax;
+  font-size: 2vmax;
 }
 
 .middle {
@@ -170,7 +183,7 @@ main {
   padding-top: 5%;
   margin-left: 2.5%;
   margin-top: 10vmax;
-  background: green;
+  background: #10696b;
 }
 
 .middle>div {
@@ -180,7 +193,7 @@ main {
   margin-left: 10%;
   padding-top: 35%;
   margin-bottom: 5%;
-  background: yellow;
+  background: #089378;
 }
 
 footer {
