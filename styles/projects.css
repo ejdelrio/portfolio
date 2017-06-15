@@ -9,8 +9,8 @@
 .template img {
   position: relative;
   float: left;
-  height: 10em;
-  width: 15em;
+  height: 12em;
+  width: 30%;
   margin-left: 2em;
   margin-top: 2em;
 
@@ -18,10 +18,10 @@
 
 .template span {
   height: 10em;
-  width: 50em;
+  width: 55%;
   float: left;
   margin-top: 2em;
-  margin-left: 2em;
+  margin-left: 2%;
 }
 
 .template span h3 {
@@ -30,6 +30,9 @@
 }
 
 .template span p {
+  height: 80%;
+  width: 100%;
   font-size: 1.2em;
   color: white;
+  overflow-y: scroll;
 }
