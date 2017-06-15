@@ -17,6 +17,8 @@ Projects.prototype.insertion = function() {
 
 projectObjects.forEach(item => proj.push(new Projects(item)));
 
-proj.forEach(item => $('main').append(item.insertion()));
+proj.forEach(item => $('#project-main').append(item.insertion()));
 
 $('.template').first().remove();
+
+var $main = $('#project-main');
