@@ -6,17 +6,12 @@ function Projects(myProject) {
 }
 
 Projects.prototype.insertion = function() {
-  var $newProject = $('.template').first().clone();
 
-  $newProject.find('a').attr('href', this['url']);
-  $newProject.find('img').attr('src', this['imgSrc']);
-  $newProject.find('h3').text(this['title']);
-  $newProject.find('p').text(this['body']);
-  return $newProject;
+  var template = $('#my-template').html();
+  var templateRender = Handlebars.compile(template);
+  return templateRender(this)
 };
 
 projectObjects.forEach(item => proj.push(new Projects(item)));
 
 proj.forEach(item => $('#project-main').append(item.insertion()));
-
-$('.template').first().remove();
